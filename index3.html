@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABULAR DATA</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+  body {
+      padding: 0px;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  tr {
+      transition: all .1s ease-in;
+      cursor: pointer;
+  }
+  
+  th{
+    background-color:rgb(26, 4, 2);
+  }
+  th,
+  td {
+      padding: 6px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      
+  }
+  
+  tr:hover {
+      background-color: #f9f4f4;
+      transform: scale(1.02);
+      box-shadow: 2px 2px 12px rgba(207, 151, 151, 0.2), -1px -1px 8px rgba(114, 87, 87, 0.2);
+  }
+  table table-bordered{
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+      table{
+          width: 90%;
+      }
+  }
+</style>
+<body>
+    <div class="container">
+    <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">alpha_two_code</th>
+            <th scope="col">domains</th>
+            <th scope="col">country</th>
+            <th scope="col">state-province</th>
+            <th scope="col">web_pages</th>
+            <th scope="col">name</th>
+          </tr>
+        </thead>
+        <tbody id="table_content">
+          
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
