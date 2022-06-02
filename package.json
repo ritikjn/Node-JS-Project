@@ -11,5 +11,11 @@
     "url": "yy"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.1.5"
+  },
+  "engines": {
+    "node": "4.x || >=6.0.0"
+  }
 }

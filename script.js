@@ -1,3 +1,5 @@
+try{
+
 fetch("http://universities.hipolabs.com/search?country=United+States").then((data)=>{
     return data.json(); //converted from string array data to object
 }).then((objectData)=>{
@@ -15,6 +17,12 @@ fetch("http://universities.hipolabs.com/search?country=United+States").then((dat
     });
 
     document.getElementById("table_content").innerHTML=tableData;  
+   
 })
+}
+catch(err){
+    console.log(err);
+}
+
 
 
